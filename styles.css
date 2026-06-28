@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#doc__wrapper {
+    padding-bottom: 5rem;
+    background: #000;
+    min-height: 100vh;
+}
+
+#title {
+    color: white;
+    font-size: 70px;
+    font-family: monospace;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#sub__title {
+    color: white;
+    text-align: center;
+}
+
+#content__wrapper {
+    width: 280px;
+    margin: auto
+}
+
+#banner>img {
+    width: 100%;
+}
+
+#banner {
+    margin: 2rem 0;
+}
+
+.pair__wrapper,
+.platform__wrapper {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.platform__select {
+    width: 200px;
+}
+
+.pair__select {
+    width: 200px
+}
+
+.time__select {
+    width: 100px;
+}
+
+#result {
+    border: none;
+    font-size: x-large;
+    background: none;
+}
+
+#signal {
+    color: white;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border: none;
+    background: rgb(108, 93, 225);
+    z-index: 100;
+}
+
+#trade__wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#center {
+    text-align: center;
+}
+
+@media (min-width: 300px) {
+    #content__wrapper {
+        width: 350px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+#signal:disabled {
+    background: grey;
+}
+
+/* UPLOADER */
+
+.uploader {
+    text-align: center;
+}
+
+.uploader input[type="file"] {
+    display: none;
+}
+
+.upload-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    color: #000;
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+.preview {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.preview img.prev {
+    width: 150px;
+    max-height: 250px;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #eee;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+    height: 12px;
+    display: none;
+}
+
+.progress-bar div {
+    height: 100%;
+    width: 0%;
+    background: dodgerblue;
+    transition: width 0.3s ease;
+}
+
